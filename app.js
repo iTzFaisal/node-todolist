@@ -24,7 +24,7 @@ app.post("/", function (req, res) {
   res.redirect("/");
 });
 
-app.listen(port, function () {
+app.listen(process.env.PORT || port, function () {
   console.log(`Example app listening at http://localhost:${port}`);
 });
 
